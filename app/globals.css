@@ -3,7 +3,9 @@
 
 :root { --background:#f7f8fa; --foreground:#172333; --muted:#667085; --line:#e6e9ee; --orange:#f2653c; --navy:#263c54; --mint:#d9f4ec; --lavender:#e9e4fb; --peach:#fff0ea; }
 * { box-sizing:border-box; }
-body { margin:0; background:var(--background); color:var(--foreground); font-family:'DM Sans', sans-serif; }
+html { color-scheme: light; }
+body { margin:0; min-width:320px; background:var(--background); color:var(--foreground); font-family:'DM Sans', sans-serif; }
+@media (max-width:1023px) { body { padding-bottom:76px; } }
 button { font:inherit; }
 .font-display { font-family:'Space Grotesk', sans-serif; }
 .text-orange { color:var(--orange); }
